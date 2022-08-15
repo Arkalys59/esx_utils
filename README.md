@@ -7,6 +7,8 @@ Remove NPCs Police, Ambulance etc...
 
 Remove weapon drop
 
-Adding trains 
+added: trains 
 
 added: removal of life bars and armor from the map
+
+added: anti head shot
