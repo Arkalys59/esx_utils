@@ -13,7 +13,7 @@ local function SetWeaponDrops()
 end
 
 Citizen.CreateThread(function()
-	for i = 1, 12 do
+	for i = 1, 15 do
 		Citizen.InvokeNative(0xDC0F817884CDD856, i, false)
 	end
 end)
@@ -40,6 +40,7 @@ Citizen.CreateThread(function()
 end)
 --Train
 
+-- barre map
 Citizen.CreateThread(function()
     local minimap = RequestScaleformMovie("minimap")
 
@@ -54,3 +55,17 @@ Citizen.CreateThread(function()
             EndScaleformMovieMethod()
     end
 end)
+-- barre map
+
+-- -- headshot
+Citizen.CreateThread(function()
+
+    while true do
+    
+        SetPedSuffersCriticalHits(GetPlayerPed(-1), false)
+    
+        Wait(1)
+    
+    end
+end)
+-- -- headshot
